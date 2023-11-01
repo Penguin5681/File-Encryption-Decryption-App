@@ -27,8 +27,8 @@ public class SendOTPService {
             MimeMessage message = new MimeMessage(session);
             message.setFrom(new InternetAddress(from));
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-            message.setSubject("File Enc OTP");
-            message.setText("Your One Time Password for File Enc app is " + genOTP);
+            message.setSubject("OTP for File Encryption App");
+            message.setText("Your One Time Password for File Encryption App is " + genOTP + "\n Don't share this with anyone");
             System.out.println("Sending...");
             Transport.send(message);
             System.out.println("Sent message successfully.");
