@@ -9,7 +9,7 @@ public class SendOTPService {
     public static void sendOTP(String email, String genOTP) {
         String to = email;
         String from = "";     // Enter your email here
-        String password = ""; // Enter your password here
+        String password = ""; // Enter your password here (It is preffered to use google app passwords for better security)
         String host = "smtp.gmail.com";
         Properties properties = System.getProperties();
         properties.put("mail.smtp.host", host);
